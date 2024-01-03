@@ -1,8 +1,10 @@
-let isOver18;
-let hasCriminalBlacklist;
+let isOver18 = true ;
+let hasCriminalBlacklist =  true;
 
-let isAllow;
 
-// Start coding here
+// James status is !hasCriminalBlacklist and isOver18
 
-console.log(isAllow);
+ let JamesCriminalStatus = !hasCriminalBlacklist   // James ไม่เคยมีประวัติอาขญากรรม
+ let isAllow = isOver18 || !(JamesCriminalStatus)  // isOver18 = True = สามารถเข้างานได้,ผู้ร่วมงานต้องตรงข้ามกับการเข้าร่วมงาน
+
+console.log(isAllow); // true
